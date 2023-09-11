@@ -7,6 +7,7 @@
     mach-nix.url = "github:DavHau/mach-nix";
 
     osh = {
+      # TODO update to latest main
       url = "git+ssh://git@github.com/dkuettel/one-shell-history?rev=1385eaec85ac774ad5381ef2e6cff4091276b828";
       flake = false;
     };
@@ -54,9 +55,12 @@
           installPhase = ''
             mkdir $out
             cp -r * $out/
+
             # patch bin/osh to use our Python
             echo "PYTHONPATH=$out/python python3.9 -m osh \$@" > $out/bin/osh
             wrapProgram $out/bin/osh --prefix PATH : ${oshPythonDependencies}/bin \
+
+            # TODO systemd
           '';
         };
 
