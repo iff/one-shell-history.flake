@@ -5,11 +5,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1689068808,
-        "narHash": "sha256-6ixXo3wt24N/melDWjq70UuHQLxGV8jZvooRanIHXw0=",
+        "lastModified": 1692799911,
+        "narHash": "sha256-3eihraek4qL744EvQXsK1Ha6C3CR7nnT8X2qWap4RNk=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "919d646de7be200f3bf08cb76ae1f09402b6f9b4",
+        "rev": "f9e7cf818399d17d347f847525c5a5a8032e4e44",
         "type": "github"
       },
       "original": {
@@ -70,11 +70,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1691831739,
-        "narHash": "sha256-6e12VCvA7jOjhzJ1adLiUV1GTPXGBcCfhggsDwiuNB4=",
+        "lastModified": 1694395945,
+        "narHash": "sha256-gV2++nPo5W6MJY0UlBouh8Q9jq7MAbGkWQylmOGtNO4=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "3fe694c4156b84dac12627685c7ae592a71e2206",
+        "rev": "68eec8e6b3a455b19ff20197457ae82c115bdc09",
         "type": "github"
       },
       "original": {
@@ -87,14 +87,18 @@
     "osh": {
       "flake": false,
       "locked": {
-        "lastModified": 1691866820,
-        "narHash": "sha256-Y/m7HUyTB0Vqx1AUJSQhayagXpq/XdxfUj7bQkVJqHI=",
-        "path": "/Users/iff/src/one-shell-history",
-        "type": "path"
+        "lastModified": 1662323132,
+        "narHash": "sha256-AE9unvtek5jfM8ffp7CLf6f554vwfTQ4MX568oV9cPw=",
+        "ref": "refs/heads/main",
+        "rev": "1385eaec85ac774ad5381ef2e6cff4091276b828",
+        "revCount": 250,
+        "type": "git",
+        "url": "ssh://git@github.com/dkuettel/one-shell-history"
       },
       "original": {
-        "path": "/Users/iff/src/one-shell-history",
-        "type": "path"
+        "rev": "1385eaec85ac774ad5381ef2e6cff4091276b828",
+        "type": "git",
+        "url": "ssh://git@github.com/dkuettel/one-shell-history"
       }
     },
     "pypi-deps-db": {

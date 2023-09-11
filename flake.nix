@@ -7,8 +7,7 @@
     mach-nix.url = "github:DavHau/mach-nix";
 
     osh = {
-      # url = "git+https://github.com/dkuettel/one-shell-history";
-      url = "/Users/iff/src/one-shell-history";
+      url = "git+ssh://git@github.com/dkuettel/one-shell-history?rev=1385eaec85ac774ad5381ef2e6cff4091276b828";
       flake = false;
     };
   };
