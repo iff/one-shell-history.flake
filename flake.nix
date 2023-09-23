@@ -23,7 +23,7 @@
         };
 
         oshPythonDependencies = machNix.mkPython {
-          # TODO: requirements = builtins.readFile ./python/requirements.txt;
+          # TODO: requirements = builtins.readFile ./requirements.txt;
 
           requirements = ''
             setuptools
@@ -57,7 +57,7 @@
             cp -r python $out/
             cp -r shells $out/
 
-            # patch bin/osh to use our Python
+            mkdir $out/bin
             echo "PYTHONPATH=$out/python python3.9 -m osh \$@" > $out/bin/osh
             wrapProgram $out/bin/osh --prefix PATH : ${oshPythonDependencies}/bin \
 
