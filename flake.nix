@@ -54,7 +54,9 @@
 
           installPhase = ''
             mkdir $out
-            cp -r * $out/
+            cp -r bin $out/
+            cp -r python $out/
+            cp -r shells $out/
 
             # patch bin/osh to use our Python
             echo "PYTHONPATH=$out/python python3.9 -m osh \$@" > $out/bin/osh
