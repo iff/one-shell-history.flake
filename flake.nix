@@ -58,7 +58,10 @@
             cp -r shells $out/
 
             mkdir $out/bin
-            echo "PYTHONPATH=$out/python python3.9 -m osh \$@" > $out/bin/osh
+            echo "#!/usr/bin/env zsh" > $out/bin/osh
+            echo "set -eu -o pipefail" >> $out/bin/osh
+            echo "PYTHONPATH=$out/python python3.9 -m osh \$@" >> $out/bin/osh
+            chmod +x $out/bin/osh
             wrapProgram $out/bin/osh --prefix PATH : ${oshPythonDependencies}/bin \
 
             # TODO shell integration?
