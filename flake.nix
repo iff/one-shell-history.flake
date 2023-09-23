@@ -54,7 +54,6 @@
 
           installPhase = ''
             mkdir $out
-            cp -r bin $out/
             cp -r python $out/
             cp -r shells $out/
 
@@ -62,7 +61,7 @@
             echo "PYTHONPATH=$out/python python3.9 -m osh \$@" > $out/bin/osh
             wrapProgram $out/bin/osh --prefix PATH : ${oshPythonDependencies}/bin \
 
-            # TODO systemd
+            # TODO shell integration?
           '';
         };
 
