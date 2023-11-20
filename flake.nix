@@ -8,7 +8,7 @@
 
     osh = {
       # TODO update to latest main
-      url = "git+ssh://git@github.com/dkuettel/one-shell-history?rev=1385eaec85ac774ad5381ef2e6cff4091276b828";
+      url = github:dkuettel/one-shell-history/1385eaec85ac774ad5381ef2e6cff4091276b828;
       flake = false;
     };
   };
